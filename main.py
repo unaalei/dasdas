@@ -60,6 +60,7 @@ def check_for_updates() -> None:
     """
     if (latest_version := get_latest_version()) != MY_VERSION:
      match repeat_prompt_until_valid_input(f"""{Fore.LIGHTGREEN_EX}New Version Available
+                                           
 
 {Fore.LIGHTWHITE_EX}https://github.com/the-cult-of-integral/discord-raidkit/releases/tag/{latest_version}
 
